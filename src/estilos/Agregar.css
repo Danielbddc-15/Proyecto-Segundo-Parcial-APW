@@ -1,0 +1,94 @@
+.headerIE {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+  }
+  
+  /* Estilo para la barra */
+  
+  
+  /* Estilo para la imagen del usuario */
+  .userIE .img1 {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    border-radius: 100%; /* Para hacerla redonda */
+    margin-right: 100px; /* Espacio entre la imagen y el texto */
+    
+  }
+  
+  /* Estilo para el nombre del usuario */
+  .name {
+    font-size: 20px; /* Tamaño del texto */
+    margin-right: 100px;
+  }
+  .bodyIE {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+      padding: 0;
+      margin: 0;
+    }
+    
+  .navIE {
+      position: absolute;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      width: 52px;
+      background-color: #221f1fc2;
+      overflow: hidden;
+      transition: width 0.3s;
+    }
+    
+    .navIE:hover {
+      width: 400px;
+    }
+    
+    .navIE .barIE {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: end;
+    }
+    
+    .navIE .userIE{
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+      height: 180px;
+      transform: translateX(-300px);
+      opacity: 0;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .navIE:hover .userIE {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
+   
+    .navIE .linksIE {
+    }
+    
+    .navIE .linksIE a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      width: 400px;
+      overflow: hidden;
+      
+    }
+    .navIE .linksIE a:hover {
+      background-color: rgb(31, 135, 205);
+      color: white;
+    }
+    
+    .navIE .linksIE a .icon {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
