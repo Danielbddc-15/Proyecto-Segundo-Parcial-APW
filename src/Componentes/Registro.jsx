@@ -77,11 +77,11 @@ function RegistroUsuario() {
       };
   
       localStorage.setItem('usuarioRegistrado', JSON.stringify(usuarioRegistrado));
-  
+      alert('Usuario registrado correctamente.');
       // Actualiza el estado para mostrar el mensaje de registro exitoso
       setRegistroExitoso(true);
     } else {
-      console.log('Error: Por favor, rellena el formulario correctamente.');
+      alert('Error: Por favor, rellena el formulario correctamente.');
     }
   };
 
@@ -201,12 +201,9 @@ function RegistroUsuario() {
                 value="Cancelar"
                 onClick={handleCancelar}
               />
-              <p className="formulario__mensaje-exito" id="formulario__mensaje-exito">
-                Registro enviado exitosamente!
-              </p>
-            </div>
+           </div>
           </form>
-        </div>
+        </div> 
         <img
           src="https://seeklogo.com/images/U/uleam-logo-853FE191D4-seeklogo.com.png"
           alt="Descripción de la imagen"
